@@ -27,12 +27,14 @@ public class PracticeForm {
         open("/automation-practice-form");
         executeJavaScript("$('#fixedban').remove()");
         executeJavaScript("$('footer').remove()");
+
         //ввод значений
         $("#firstName").setValue("Vera");
         $("#lastName").setValue("Stepanova");
         $("#userEmail").setValue("v.stepanova@mail.ru");
         $("#genterWrapper").$(byText("Female")).click();
         $("#userNumber").setValue("1234567890");
+
         //дата рождения
         $("#dateOfBirthInput").click();
         $(".react-datepicker__month-select").selectOptionContainingText("March");
